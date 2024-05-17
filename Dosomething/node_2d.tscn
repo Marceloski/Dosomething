@@ -1,0 +1,572 @@
+[gd_scene load_steps=58 format=3 uid="uid://dr2u58vyjnhl8"]
+
+[ext_resource type="Texture2D" uid="uid://bdwpri50bus4d" path="res://Portada/fondos 1.png" id="1_8ek7u"]
+[ext_resource type="Script" path="res://node_2d.gd" id="1_n5i1h"]
+[ext_resource type="Texture2D" uid="uid://byvbx0y4dxp6w" path="res://Portada/titulO.png" id="2_13jnn"]
+[ext_resource type="Texture2D" uid="uid://cypxd4bqtnidg" path="res://Portada/mona.png" id="4_6k5ip"]
+[ext_resource type="Texture2D" uid="uid://dinrushjah7qh" path="res://Portada/conf..png" id="5_bx65k"]
+[ext_resource type="Texture2D" uid="uid://bo3v27j2w3b0g" path="res://Portada/boton-removebg-preview.png" id="6_d6jo5"]
+[ext_resource type="Texture2D" uid="uid://rah68ky4ialu" path="res://Portada/jugar.png" id="7_7k75k"]
+[ext_resource type="Script" path="res://Jugar.gd" id="7_s5adp"]
+[ext_resource type="Texture2D" uid="uid://ceklf1vhdll0h" path="res://Portada/instrucciones.png" id="8_2k4xc"]
+[ext_resource type="Script" path="res://Intrucciones.gd" id="9_al5et"]
+[ext_resource type="Texture2D" uid="uid://cq5tb3yb2j307" path="res://Oficina/sketch1704247249518.png" id="9_rqivi"]
+[ext_resource type="Texture2D" uid="uid://cr1thl56jcmdn" path="res://Oficina/sketch1704247207412.png" id="10_fnadt"]
+[ext_resource type="Script" path="res://Button.gd" id="11_0ia5b"]
+[ext_resource type="Texture2D" uid="uid://bv7pne2y3yx41" path="res://Oficina/sketch1704247267231.png" id="11_6agaj"]
+[ext_resource type="Texture2D" uid="uid://cx25pllnohth2" path="res://Comic/transición/sketch1710813891967.png" id="11_n60lr"]
+[ext_resource type="Texture2D" uid="uid://cvq0674brqqsf" path="res://Comic/transición/sketch1710813911115.png" id="12_t08d5"]
+[ext_resource type="Texture2D" uid="uid://vtmq7ynwlvay" path="res://Oficina/sketch1704247296150.png" id="12_x6b4j"]
+[ext_resource type="Texture2D" uid="uid://cbgnbdvlb8we4" path="res://Instrucciones/INST/sketch1710815526106.png" id="12_xnipr"]
+[ext_resource type="Texture2D" uid="uid://dxat2wxjy24t5" path="res://Oficina/sketch1704247345325.png" id="13_56jgs"]
+[ext_resource type="Texture2D" uid="uid://dn3hikpy8atbm" path="res://Comic/transición/sketch1710813924246.png" id="13_asd76"]
+[ext_resource type="Texture2D" uid="uid://ga5vjry4t6qp" path="res://Oficina/sketch1710816424286.png" id="13_udhev"]
+[ext_resource type="Texture2D" uid="uid://ycx3f5kv5myx" path="res://Comic/transición/sketch1710813935769.png" id="14_kl55c"]
+[ext_resource type="Texture2D" uid="uid://c1fcmdd0csy8t" path="res://Oficina/sketch1704247394680.png" id="14_sop6x"]
+[ext_resource type="Script" path="res://Atras.gd" id="14_wt3lu"]
+[ext_resource type="Texture2D" uid="uid://b7o1o67d14kuf" path="res://Comic/transición/sketch1710813975620.png" id="15_5cavd"]
+[ext_resource type="Texture2D" uid="uid://btmkg2cctfu6j" path="res://Oficina/sketch1704247405312.png" id="15_cs2s2"]
+[ext_resource type="Texture2D" uid="uid://cgboejqpnv3nq" path="res://Comic/transición/skectchch.PNG" id="16_8s4nh"]
+[ext_resource type="Texture2D" uid="uid://bvre8juvgpn6m" path="res://Comic/transición/scerjjhee.PNG" id="17_ceqbg"]
+[ext_resource type="Script" path="res://Buttongenero.gd" id="17_nmd3r"]
+[ext_resource type="Script" path="res://ButtonJugarGenero.gd" id="17_pk3po"]
+[ext_resource type="Texture2D" uid="uid://blx731klfphna" path="res://Comic/transición/ffqfqfqfq.PNG" id="18_5do8b"]
+[ext_resource type="Texture2D" uid="uid://cm6v00h3emfo3" path="res://Instrucciones/INST/sketch1710815650928.png" id="19_8hv0f"]
+[ext_resource type="Texture2D" uid="uid://ce410ngf7ua3x" path="res://Casa/sketch1707923294641.png" id="19_08v2k"]
+[ext_resource type="Texture2D" uid="uid://bcdlilqbht3qs" path="res://Casa/sketch1710813692953.png" id="20_2befj"]
+[ext_resource type="Texture2D" uid="uid://dbcya6cveeuj0" path="res://Instrucciones/INST/sketch1710815461823.png" id="20_kpmai"]
+[ext_resource type="Texture2D" uid="uid://hcuvcngf3854" path="res://Instrucciones/INST/sketch1710815551539.png" id="21_27ekw"]
+[ext_resource type="Texture2D" uid="uid://fhgi46rw77hm" path="res://Casa/sketch1707924312593.png" id="21_64jyu"]
+[ext_resource type="Texture2D" uid="uid://ciqmfjepfstsj" path="res://Casa/sketch1710813572183.png" id="22_xscnu"]
+[ext_resource type="Texture2D" uid="uid://bsv0r6o7rwb4" path="res://Casa/sketch1707923769106.png" id="23_iuqh6"]
+[ext_resource type="Texture2D" uid="uid://d0gqtv2ev0mtc" path="res://Casa/sketch1707923670512.png" id="24_74eno"]
+[ext_resource type="Texture2D" uid="uid://4dgl2e0pmdbj" path="res://Casa/sketch1710813636348.png" id="25_k73xn"]
+[ext_resource type="Texture2D" uid="uid://bxtid460ecev7" path="res://Casa/sketch1707923801844.png" id="27_lppm3"]
+[ext_resource type="Texture2D" uid="uid://deilqslpdpjqw" path="res://Casa/sketch1707923786851.png" id="28_6w8dc"]
+[ext_resource type="Texture2D" uid="uid://dfyo8tp3jro4" path="res://sketch1710816424286.png" id="28_kh58l"]
+[ext_resource type="Script" path="res://botoncomic.gd" id="30_w6etq"]
+[ext_resource type="Script" path="res://NodeOficina.gd" id="31_ukjmh"]
+[ext_resource type="Texture2D" uid="uid://io7oluntmmhs" path="res://Oficina/sketch1709818535556.png" id="35_waff1"]
+[ext_resource type="Texture2D" uid="uid://8kn11k2vn15b" path="res://Casa/sketch1707923692816.png" id="37_bedw0"]
+[ext_resource type="FontVariation" uid="uid://dr78wllg6dqjc" path="res://Portada/Dial1.tres" id="40_if84s"]
+[ext_resource type="Texture2D" uid="uid://d0qmoi2m0s5b0" path="res://Instrucciones/INST/sketch1710816048923.png" id="41_7aoyd"]
+[ext_resource type="FontFile" uid="uid://df2e5skinq6lv" path="res://Portada/new_font_file.tres" id="41_cqge0"]
+[ext_resource type="Texture2D" uid="uid://db57v2mbphrp0" path="res://Oficina/png-transparent-arrow-show-turn-symbol-direction-right-next-characters-icons-indicator-removebg-preview.png" id="41_mi8h5"]
+[ext_resource type="Texture2D" uid="uid://bmjguj6afncgk" path="res://Instrucciones/INST/sketch1710815575288.png" id="43_5j8me"]
+[ext_resource type="Texture2D" uid="uid://bgbk0wwcbqtd3" path="res://sketch1704247364469.png" id="48_060uo"]
+
+[sub_resource type="FontFile" id="FontFile_6tra1"]
+resource_local_to_scene = true
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="Theme_xf0ul"]
+
+[sub_resource type="FontFile" id="FontFile_ngcrq"]
+resource_local_to_scene = true
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/45/0 = Vector2(0, 0)
+cache/0/45/0/ascent = 0.0
+cache/0/45/0/descent = 0.0
+cache/0/45/0/underline_position = 0.0
+cache/0/45/0/underline_thickness = 0.0
+cache/0/45/0/scale = 1.0
+cache/0/45/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/45/0/kerning_overrides/45/0 = Vector2(0, 0)
+
+[node name="NodePrincipal" type="Node2D"]
+script = ExtResource("1_n5i1h")
+
+[node name="NodeMenuPrincipal" type="Node2D" parent="."]
+
+[node name="Menu Principal" type="Sprite2D" parent="NodeMenuPrincipal"]
+position = Vector2(584, 325)
+scale = Vector2(0.57625, 0.5375)
+texture = ExtResource("1_8ek7u")
+
+[node name="Titulo" type="Sprite2D" parent="NodeMenuPrincipal/Menu Principal"]
+position = Vector2(-5.20605, -5.58148)
+texture = ExtResource("2_13jnn")
+
+[node name="Configuracion" type="Sprite2D" parent="NodeMenuPrincipal/Menu Principal/Titulo"]
+position = Vector2(-935.358, -533.954)
+scale = Vector2(0.148373, 0.168992)
+texture = ExtResource("5_bx65k")
+
+[node name="Mona" type="Sprite2D" parent="NodeMenuPrincipal/Menu Principal/Titulo"]
+position = Vector2(18.6552, 138.14)
+scale = Vector2(0.908894, 0.782171)
+texture = ExtResource("4_6k5ip")
+
+[node name="Jugar" type="TextureButton" parent="NodeMenuPrincipal"]
+offset_left = 63.0
+offset_top = 478.0
+offset_right = 374.0
+offset_bottom = 569.0
+script = ExtResource("7_s5adp")
+
+[node name="TextureButton" type="TextureButton" parent="NodeMenuPrincipal/Jugar"]
+layout_mode = 0
+offset_left = -10.0
+offset_top = -46.0
+offset_right = 543.0
+offset_bottom = 194.0
+scale = Vector2(0.64, 0.639999)
+texture_normal = ExtResource("6_d6jo5")
+
+[node name="Jugarimg" type="Sprite2D" parent="NodeMenuPrincipal/Jugar"]
+position = Vector2(177.75, 40.5)
+scale = Vector2(0.15367, 0.108572)
+texture = ExtResource("7_7k75k")
+
+[node name="Intrucciones" type="TextureButton" parent="NodeMenuPrincipal"]
+offset_left = 746.0
+offset_top = 475.0
+offset_right = 1057.0
+offset_bottom = 566.0
+script = ExtResource("9_al5et")
+
+[node name="TextureButton" type="TextureButton" parent="NodeMenuPrincipal/Intrucciones"]
+layout_mode = 0
+offset_left = -10.0
+offset_top = -46.0
+offset_right = 543.0
+offset_bottom = 194.0
+scale = Vector2(0.64, 0.639999)
+texture_normal = ExtResource("6_d6jo5")
+
+[node name="IntruccionImg" type="Sprite2D" parent="NodeMenuPrincipal/Intrucciones"]
+position = Vector2(177.75, 40.5)
+scale = Vector2(0.15367, 0.148573)
+texture = ExtResource("8_2k4xc")
+
+[node name="NodeInstrucciones" type="Node2D" parent="."]
+
+[node name="BotonGenero" type="Button" parent="NodeInstrucciones"]
+offset_left = 924.0
+offset_top = 496.0
+offset_right = 1119.0
+offset_bottom = 577.0
+script = ExtResource("11_0ia5b")
+
+[node name="Fondo INSTRUC" type="Sprite2D" parent="NodeInstrucciones"]
+position = Vector2(575.5, 329)
+scale = Vector2(0.5715, 0.54)
+texture = ExtResource("19_8hv0f")
+
+[node name="Sketch1710816424286" type="Sprite2D" parent="NodeInstrucciones/Fondo INSTRUC"]
+position = Vector2(-569.554, -100)
+scale = Vector2(0.713036, 0.87037)
+texture = ExtResource("13_udhev")
+
+[node name="Letras Ins" type="Sprite2D" parent="NodeInstrucciones"]
+position = Vector2(308, 249)
+scale = Vector2(0.39325, 0.366042)
+texture = ExtResource("12_xnipr")
+
+[node name="Tusdes" type="Sprite2D" parent="NodeInstrucciones"]
+position = Vector2(792, 262)
+scale = Vector2(0.48325, 0.41375)
+texture = ExtResource("43_5j8me")
+
+[node name="Atras" type="TextureButton" parent="NodeInstrucciones"]
+offset_left = 58.864
+offset_top = 550.94
+offset_right = 347.864
+offset_bottom = 645.94
+script = ExtResource("14_wt3lu")
+
+[node name="Boton" type="Sprite2D" parent="NodeInstrucciones/Atras"]
+position = Vector2(528.136, 293.339)
+scale = Vector2(0.531012, 0.624535)
+texture = ExtResource("41_7aoyd")
+
+[node name="NodeGenero" type="Node2D" parent="."]
+
+[node name="ButtonJugarGenero" type="Button" parent="NodeGenero"]
+offset_left = 951.0
+offset_top = 493.0
+offset_right = 1157.0
+offset_bottom = 592.0
+script = ExtResource("17_pk3po")
+
+[node name="ButtonAtrasGenero" type="Button" parent="NodeGenero"]
+offset_left = 32.0
+offset_top = 504.0
+offset_right = 206.0
+offset_bottom = 594.0
+script = ExtResource("17_nmd3r")
+
+[node name="FondoGenero" type="Sprite2D" parent="NodeGenero"]
+position = Vector2(575, 324.5)
+scale = Vector2(0.574, 0.535833)
+texture = ExtResource("19_8hv0f")
+
+[node name="Mujer" type="Button" parent="NodeGenero/FondoGenero"]
+offset_left = -293.0
+offset_top = -197.0
+offset_right = -70.0
+offset_bottom = 348.0
+
+[node name="Hombre" type="Button" parent="NodeGenero/FondoGenero"]
+offset_left = 40.0
+offset_top = -197.0
+offset_right = 268.0
+offset_bottom = 355.0
+
+[node name="Personajes" type="Sprite2D" parent="NodeGenero"]
+position = Vector2(566, 359)
+scale = Vector2(0.507, 0.480417)
+texture = ExtResource("20_kpmai")
+
+[node name="Elige" type="Sprite2D" parent="NodeGenero"]
+position = Vector2(580, 408)
+scale = Vector2(0.7315, 0.803333)
+texture = ExtResource("21_27ekw")
+
+[node name="Sketch1710816048923" type="Sprite2D" parent="NodeGenero"]
+position = Vector2(593, 870)
+scale = Vector2(0.564875, 0.661667)
+texture = ExtResource("41_7aoyd")
+
+[node name="NodeComic" type="Node2D" parent="."]
+
+[node name="Buttonsiguientecomic" type="Button" parent="NodeComic"]
+offset_left = 927.0
+offset_top = 309.0
+offset_right = 1138.0
+offset_bottom = 407.0
+script = ExtResource("30_w6etq")
+
+[node name="FondoComic" type="Sprite2D" parent="NodeComic"]
+position = Vector2(576, 321)
+scale = Vector2(0.578, 0.536667)
+texture = ExtResource("11_n60lr")
+
+[node name="Burbuja" type="Sprite2D" parent="NodeComic"]
+position = Vector2(994, 604)
+texture = ExtResource("12_t08d5")
+
+[node name="Contrato" type="Sprite2D" parent="NodeComic"]
+position = Vector2(1196, 302)
+scale = Vector2(0.583, 0.723333)
+texture = ExtResource("13_asd76")
+
+[node name="Sketch1710813935769" type="Sprite2D" parent="NodeComic"]
+position = Vector2(1438, 361)
+texture = ExtResource("14_kl55c")
+
+[node name="Sketch1710813975620" type="Sprite2D" parent="NodeComic"]
+position = Vector2(588.5, 214)
+scale = Vector2(0.5885, 0.723333)
+texture = ExtResource("15_5cavd")
+
+[node name="Skectchch" type="Sprite2D" parent="NodeComic"]
+position = Vector2(253.75, 125.75)
+scale = Vector2(0.574968, 0.502179)
+texture = ExtResource("16_8s4nh")
+
+[node name="Scerjjhee" type="Sprite2D" parent="NodeComic"]
+position = Vector2(861.5, 475)
+scale = Vector2(0.968439, 1)
+texture = ExtResource("17_ceqbg")
+
+[node name="Ffqfqfqfq" type="Sprite2D" parent="NodeComic"]
+position = Vector2(440, 418)
+texture = ExtResource("18_5do8b")
+
+[node name="Siguiente" type="Sprite2D" parent="NodeComic"]
+position = Vector2(1039, 357)
+scale = Vector2(0.224, 0.267917)
+texture = ExtResource("28_kh58l")
+
+[node name="Label" type="Label" parent="NodeComic/Siguiente"]
+offset_left = -473.214
+offset_top = -89.5801
+offset_right = 392.786
+offset_bottom = 227.42
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_6tra1")
+theme_override_font_sizes/font_size = 100
+text = "Siguiente"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="NodeOficina" type="Node2D" parent="."]
+script = ExtResource("31_ukjmh")
+
+[node name="Celeste" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(486, 330.331)
+scale = Vector2(0.312533, 0.522219)
+texture = ExtResource("9_rqivi")
+
+[node name="Nubes" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(612, 269)
+scale = Vector2(0.380543, 0.402877)
+texture = ExtResource("10_fnadt")
+
+[node name="FondoOficina" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(581, 330)
+scale = Vector2(0.579, 0.541667)
+texture = ExtResource("11_6agaj")
+
+[node name="Sanabanana" type="Sprite2D" parent="NodeOficina/FondoOficina"]
+position = Vector2(367.876, 53.5385)
+scale = Vector2(0.496366, 0.510461)
+texture = ExtResource("35_waff1")
+
+[node name="EscritorioySillaOficina" type="Sprite2D" parent="NodeOficina/FondoOficina"]
+position = Vector2(55.2677, -31.3846)
+scale = Vector2(1.08808, 1.25692)
+texture = ExtResource("12_x6b4j")
+
+[node name="GatoOficina" type="Sprite2D" parent="NodeOficina/FondoOficina/EscritorioySillaOficina"]
+position = Vector2(361.905, 45.5324)
+scale = Vector2(1.43828, 1.38422)
+texture = ExtResource("13_56jgs")
+
+[node name="Marcadores" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(582, 324)
+scale = Vector2(0.5875, 0.558333)
+texture = ExtResource("48_060uo")
+
+[node name="Dialogo" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(471.5, 138.5)
+scale = Vector2(0.5885, 0.5075)
+texture = ExtResource("28_kh58l")
+
+[node name="Dialogo" type="RichTextLabel" parent="NodeOficina/Dialogo" node_paths=PackedStringArray("shortcut_context")]
+offset_left = -475.0
+offset_top = -161.0
+offset_right = 414.0
+offset_bottom = 168.0
+focus_mode = 2
+shortcut_context = NodePath("../../..")
+theme = SubResource("Theme_xf0ul")
+theme_override_colors/default_color = Color(0.141176, 0, 0.0117647, 1)
+theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/bold_font_size = 50
+fit_content = true
+scroll_following = true
+autowrap_mode = 2
+tab_size = 1
+selection_enabled = true
+
+[node name="Dinero" type="RichTextLabel" parent="NodeOficina/Dialogo"]
+offset_left = -743.0
+offset_top = 894.0
+offset_right = -464.0
+offset_bottom = 975.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_ngcrq")
+theme_override_font_sizes/normal_font_size = 45
+text = "
+"
+fit_content = true
+scroll_following = true
+autowrap_mode = 2
+
+[node name="Felicidad" type="RichTextLabel" parent="NodeOficina/Dialogo"]
+offset_left = -720.0
+offset_top = 716.0
+offset_right = -455.0
+offset_bottom = 777.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_ngcrq")
+theme_override_font_sizes/normal_font_size = 45
+fit_content = true
+scroll_following = true
+autowrap_mode = 2
+
+[node name="Empleados" type="RichTextLabel" parent="NodeOficina/Dialogo"]
+offset_left = -720.0
+offset_top = 789.0
+offset_right = -484.0
+offset_bottom = 850.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_ngcrq")
+theme_override_font_sizes/normal_font_size = 45
+fit_content = true
+scroll_following = true
+autowrap_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NodeOficina/Dialogo"]
+offset_left = -381.0
+offset_top = 858.0
+offset_right = -196.0
+offset_bottom = 982.0
+
+[node name="Buttonsigueinte" type="Button" parent="NodeOficina"]
+offset_left = 905.0
+offset_top = 357.0
+offset_right = 1106.0
+offset_bottom = 433.0
+
+[node name="Siguiente" type="Sprite2D" parent="NodeOficina/Buttonsigueinte"]
+position = Vector2(111, 37)
+scale = Vector2(0.2235, 0.227292)
+texture = ExtResource("28_kh58l")
+
+[node name="Label" type="Label" parent="NodeOficina/Buttonsigueinte/Siguiente"]
+offset_left = -473.0
+offset_top = -88.0
+offset_right = 398.0
+offset_bottom = 227.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("40_if84s")
+theme_override_font_sizes/font_size = 100
+text = "Siguiente"
+horizontal_alignment = 1
+autowrap_mode = 2
+justification_flags = 0
+
+[node name="Ganancias" type="RichTextLabel" parent="NodeOficina"]
+offset_left = 954.0
+offset_top = 104.0
+offset_right = 1116.0
+offset_bottom = 227.0
+rotation = -0.132645
+pivot_offset = Vector2(50, 50)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("41_cqge0")
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "$1000
+"
+fit_content = true
+scroll_active = false
+scroll_following = true
+autowrap_mode = 2
+tab_size = 0
+
+[node name="HombreOficina" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(614, 330)
+scale = Vector2(0.617562, 0.629167)
+texture = ExtResource("15_cs2s2")
+
+[node name="MujerOficina" type="Sprite2D" parent="NodeOficina"]
+position = Vector2(610, 323)
+scale = Vector2(0.60875, 0.6575)
+texture = ExtResource("14_sop6x")
+
+[node name="Flehcas" type="Node2D" parent="NodeOficina"]
+position = Vector2(237, 452)
+rotation = 2.46991
+scale = Vector2(0.27, 0.308)
+
+[node name="Flecha Icono" type="Sprite2D" parent="NodeOficina/Flehcas"]
+position = Vector2(-141.376, 594.146)
+rotation = 1.15687
+scale = Vector2(0.861681, 1.03521)
+skew = 0.0883461
+texture = ExtResource("41_mi8h5")
+
+[node name="Flecha Dialogo" type="Sprite2D" parent="NodeOficina/Flehcas"]
+position = Vector2(-1226.77, -311.596)
+rotation = 2.01413
+scale = Vector2(1.1105, 1.93654)
+skew = -0.0934349
+texture = ExtResource("41_mi8h5")
+
+[node name="Flecha Ganacia" type="Sprite2D" parent="NodeOficina/Flehcas"]
+position = Vector2(-2356.14, -725.371)
+rotation = -2.95462
+scale = Vector2(1.35592, 1.03283)
+skew = 0.0544069
+texture = ExtResource("41_mi8h5")
+
+[node name="Flecha Empleados" type="Sprite2D" parent="NodeOficina/Flehcas"]
+position = Vector2(39.7905, -200.395)
+rotation = 0.124357
+scale = Vector2(1.12852, 0.91293)
+skew = 0.0368943
+texture = ExtResource("41_mi8h5")
+
+[node name="Flecha dinero" type="Sprite2D" parent="NodeOficina/Flehcas"]
+texture = ExtResource("41_mi8h5")
+
+[node name="NodeCasa" type="Node2D" parent="."]
+visible = false
+
+[node name="FondoCasa" type="Sprite2D" parent="NodeCasa"]
+position = Vector2(583.5, 331.25)
+scale = Vector2(0.5805, 0.542916)
+texture = ExtResource("19_08v2k")
+
+[node name="Elementos" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(-19.1972, -28.2576)
+scale = Vector2(1.00349, 1.04396)
+texture = ExtResource("20_2befj")
+
+[node name="Pantalla" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(-48.8657, -17.4254)
+scale = Vector2(0.949389, 1.09969)
+texture = ExtResource("22_xscnu")
+
+[node name="SillonNiño" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(132.635, -153.532)
+scale = Vector2(1.26963, 1.39796)
+texture = ExtResource("23_iuqh6")
+
+[node name="MujerCasa" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(12.2164, -16.0126)
+scale = Vector2(0.874564, 1.00981)
+texture = ExtResource("21_64jyu")
+
+[node name="Sillon" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(1.74518, -68.7599)
+scale = Vector2(0.992147, 1.0832)
+texture = ExtResource("24_74eno")
+
+[node name="Sombreado" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(-13.9616, -31.0833)
+scale = Vector2(1.00673, 1.04944)
+texture = ExtResource("25_k73xn")
+
+[node name="NiñoAbajo" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(307.155, -274.098)
+scale = Vector2(1.56544, 1.69859)
+texture = ExtResource("28_6w8dc")
+
+[node name="NiñoArriba" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(142.119, -193.861)
+scale = Vector2(1.2324, 1.40688)
+texture = ExtResource("27_lppm3")
+
+[node name="Planta" type="Sprite2D" parent="NodeCasa/FondoCasa"]
+position = Vector2(-230.367, -95.1335)
+scale = Vector2(1.33944, 1.33752)
+texture = ExtResource("37_bedw0")
+
+[connection signal="pressed" from="NodeMenuPrincipal/Jugar/TextureButton" to="NodeMenuPrincipal/Jugar" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="NodeMenuPrincipal/Intrucciones/TextureButton" to="NodeMenuPrincipal/Intrucciones" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="NodeInstrucciones/BotonGenero" to="NodeInstrucciones/BotonGenero" method="_on_pressed"]
+[connection signal="pressed" from="NodeInstrucciones/Atras" to="NodeInstrucciones/Atras" method="_on_pressed"]
+[connection signal="pressed" from="NodeGenero/ButtonJugarGenero" to="NodeGenero/ButtonJugarGenero" method="_on_pressed"]
+[connection signal="pressed" from="NodeGenero/ButtonAtrasGenero" to="NodeGenero/ButtonAtrasGenero" method="_on_pressed"]
+[connection signal="pressed" from="NodeGenero/FondoGenero/Mujer" to="." method="_on_mujer_pressed"]
+[connection signal="pressed" from="NodeGenero/FondoGenero/Hombre" to="." method="_on_hombre_pressed"]
+[connection signal="pressed" from="NodeComic/Buttonsiguientecomic" to="NodeComic/Buttonsiguientecomic" method="_on_pressed"]
+[connection signal="visibility_changed" from="NodeOficina" to="." method="_on_node_oficina_visibility_changed"]
+[connection signal="pressed" from="NodeOficina/Buttonsigueinte" to="." method="_on_buttonsigueinte_pressed"]
