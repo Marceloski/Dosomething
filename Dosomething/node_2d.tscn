@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://dr2u58vyjnhl8"]
+[gd_scene load_steps=50 format=3 uid="uid://dr2u58vyjnhl8"]
 
 [ext_resource type="Texture2D" uid="uid://bdwpri50bus4d" path="res://Portada/fondos 1.png" id="1_8ek7u"]
 [ext_resource type="Script" path="res://node_2d.gd" id="1_n5i1h"]
@@ -7,12 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dinrushjah7qh" path="res://Portada/conf..png" id="5_bx65k"]
 [ext_resource type="Texture2D" uid="uid://bo3v27j2w3b0g" path="res://Portada/boton-removebg-preview.png" id="6_d6jo5"]
 [ext_resource type="Texture2D" uid="uid://rah68ky4ialu" path="res://Portada/jugar.png" id="7_7k75k"]
-[ext_resource type="Script" path="res://Jugar.gd" id="7_s5adp"]
 [ext_resource type="Texture2D" uid="uid://ceklf1vhdll0h" path="res://Portada/instrucciones.png" id="8_2k4xc"]
-[ext_resource type="Script" path="res://Intrucciones.gd" id="9_al5et"]
 [ext_resource type="Texture2D" uid="uid://cq5tb3yb2j307" path="res://Oficina/sketch1704247249518.png" id="9_rqivi"]
 [ext_resource type="Texture2D" uid="uid://cr1thl56jcmdn" path="res://Oficina/sketch1704247207412.png" id="10_fnadt"]
-[ext_resource type="Script" path="res://Button.gd" id="11_0ia5b"]
 [ext_resource type="Texture2D" uid="uid://bv7pne2y3yx41" path="res://Oficina/sketch1704247267231.png" id="11_6agaj"]
 [ext_resource type="Texture2D" uid="uid://cx25pllnohth2" path="res://Comic/transición/sketch1710813891967.png" id="11_n60lr"]
 [ext_resource type="Texture2D" uid="uid://cvq0674brqqsf" path="res://Comic/transición/sketch1710813911115.png" id="12_t08d5"]
@@ -23,13 +20,10 @@
 [ext_resource type="Texture2D" uid="uid://ga5vjry4t6qp" path="res://Oficina/sketch1710816424286.png" id="13_udhev"]
 [ext_resource type="Texture2D" uid="uid://ycx3f5kv5myx" path="res://Comic/transición/sketch1710813935769.png" id="14_kl55c"]
 [ext_resource type="Texture2D" uid="uid://c1fcmdd0csy8t" path="res://Oficina/sketch1704247394680.png" id="14_sop6x"]
-[ext_resource type="Script" path="res://Atras.gd" id="14_wt3lu"]
 [ext_resource type="Texture2D" uid="uid://b7o1o67d14kuf" path="res://Comic/transición/sketch1710813975620.png" id="15_5cavd"]
 [ext_resource type="Texture2D" uid="uid://btmkg2cctfu6j" path="res://Oficina/sketch1704247405312.png" id="15_cs2s2"]
 [ext_resource type="Texture2D" uid="uid://cgboejqpnv3nq" path="res://Comic/transición/skectchch.PNG" id="16_8s4nh"]
 [ext_resource type="Texture2D" uid="uid://bvre8juvgpn6m" path="res://Comic/transición/scerjjhee.PNG" id="17_ceqbg"]
-[ext_resource type="Script" path="res://Buttongenero.gd" id="17_nmd3r"]
-[ext_resource type="Script" path="res://ButtonJugarGenero.gd" id="17_pk3po"]
 [ext_resource type="Texture2D" uid="uid://blx731klfphna" path="res://Comic/transición/ffqfqfqfq.PNG" id="18_5do8b"]
 [ext_resource type="Texture2D" uid="uid://cm6v00h3emfo3" path="res://Instrucciones/INST/sketch1710815650928.png" id="19_8hv0f"]
 [ext_resource type="Texture2D" uid="uid://ce410ngf7ua3x" path="res://Casa/sketch1707923294641.png" id="19_08v2k"]
@@ -44,8 +38,6 @@
 [ext_resource type="Texture2D" uid="uid://bxtid460ecev7" path="res://Casa/sketch1707923801844.png" id="27_lppm3"]
 [ext_resource type="Texture2D" uid="uid://deilqslpdpjqw" path="res://Casa/sketch1707923786851.png" id="28_6w8dc"]
 [ext_resource type="Texture2D" uid="uid://dfyo8tp3jro4" path="res://sketch1710816424286.png" id="28_kh58l"]
-[ext_resource type="Script" path="res://botoncomic.gd" id="30_w6etq"]
-[ext_resource type="Script" path="res://NodeOficina.gd" id="31_ukjmh"]
 [ext_resource type="Texture2D" uid="uid://io7oluntmmhs" path="res://Oficina/sketch1709818535556.png" id="35_waff1"]
 [ext_resource type="Texture2D" uid="uid://8kn11k2vn15b" path="res://Casa/sketch1707923692816.png" id="37_bedw0"]
 [ext_resource type="FontVariation" uid="uid://dr78wllg6dqjc" path="res://Portada/Dial1.tres" id="40_if84s"]
@@ -120,9 +112,8 @@ offset_left = 63.0
 offset_top = 478.0
 offset_right = 374.0
 offset_bottom = 569.0
-script = ExtResource("7_s5adp")
 
-[node name="TextureButton" type="TextureButton" parent="NodeMenuPrincipal/Jugar"]
+[node name="JugarButtonPrincipalGenero" type="TextureButton" parent="NodeMenuPrincipal/Jugar"]
 layout_mode = 0
 offset_left = -10.0
 offset_top = -46.0
@@ -141,9 +132,8 @@ offset_left = 746.0
 offset_top = 475.0
 offset_right = 1057.0
 offset_bottom = 566.0
-script = ExtResource("9_al5et")
 
-[node name="TextureButton" type="TextureButton" parent="NodeMenuPrincipal/Intrucciones"]
+[node name="InstruccionBotonPrincipalInstrucciones" type="TextureButton" parent="NodeMenuPrincipal/Intrucciones"]
 layout_mode = 0
 offset_left = -10.0
 offset_top = -46.0
@@ -159,12 +149,11 @@ texture = ExtResource("8_2k4xc")
 
 [node name="NodeInstrucciones" type="Node2D" parent="."]
 
-[node name="BotonGenero" type="Button" parent="NodeInstrucciones"]
+[node name="BotonInstruccionesGenero" type="Button" parent="NodeInstrucciones"]
 offset_left = 924.0
 offset_top = 496.0
 offset_right = 1119.0
 offset_bottom = 577.0
-script = ExtResource("11_0ia5b")
 
 [node name="Fondo INSTRUC" type="Sprite2D" parent="NodeInstrucciones"]
 position = Vector2(575.5, 329)
@@ -186,33 +175,32 @@ position = Vector2(792, 262)
 scale = Vector2(0.48325, 0.41375)
 texture = ExtResource("43_5j8me")
 
-[node name="Atras" type="TextureButton" parent="NodeInstrucciones"]
-offset_left = 58.864
-offset_top = 550.94
-offset_right = 347.864
-offset_bottom = 645.94
-script = ExtResource("14_wt3lu")
+[node name="BotonAtras" type="Sprite2D" parent="NodeInstrucciones"]
+position = Vector2(58.864, 550.94)
 
-[node name="Boton" type="Sprite2D" parent="NodeInstrucciones/Atras"]
+[node name="BotonInstruccionesPrincipal" type="Button" parent="NodeInstrucciones/BotonAtras"]
+offset_top = -56.0
+offset_right = 156.0
+offset_bottom = 27.0
+
+[node name="Botones" type="Sprite2D" parent="NodeInstrucciones/BotonAtras"]
 position = Vector2(528.136, 293.339)
 scale = Vector2(0.531012, 0.624535)
 texture = ExtResource("41_7aoyd")
 
 [node name="NodeGenero" type="Node2D" parent="."]
 
-[node name="ButtonJugarGenero" type="Button" parent="NodeGenero"]
+[node name="BotonJugarGeneroComic" type="Button" parent="NodeGenero"]
 offset_left = 951.0
 offset_top = 493.0
 offset_right = 1157.0
 offset_bottom = 592.0
-script = ExtResource("17_pk3po")
 
-[node name="ButtonAtrasGenero" type="Button" parent="NodeGenero"]
+[node name="BotonGeneroMenuPrincipal" type="Button" parent="NodeGenero"]
 offset_left = 32.0
 offset_top = 504.0
 offset_right = 206.0
 offset_bottom = 594.0
-script = ExtResource("17_nmd3r")
 
 [node name="FondoGenero" type="Sprite2D" parent="NodeGenero"]
 position = Vector2(575, 324.5)
@@ -248,13 +236,6 @@ texture = ExtResource("41_7aoyd")
 
 [node name="NodeComic" type="Node2D" parent="."]
 
-[node name="Buttonsiguientecomic" type="Button" parent="NodeComic"]
-offset_left = 927.0
-offset_top = 309.0
-offset_right = 1138.0
-offset_bottom = 407.0
-script = ExtResource("30_w6etq")
-
 [node name="FondoComic" type="Sprite2D" parent="NodeComic"]
 position = Vector2(576, 321)
 scale = Vector2(0.578, 0.536667)
@@ -269,28 +250,34 @@ position = Vector2(1196, 302)
 scale = Vector2(0.583, 0.723333)
 texture = ExtResource("13_asd76")
 
-[node name="Sketch1710813935769" type="Sprite2D" parent="NodeComic"]
+[node name="Mano" type="Sprite2D" parent="NodeComic"]
 position = Vector2(1438, 361)
 texture = ExtResource("14_kl55c")
 
-[node name="Sketch1710813975620" type="Sprite2D" parent="NodeComic"]
+[node name="EdificioAlto" type="Sprite2D" parent="NodeComic"]
 position = Vector2(588.5, 214)
 scale = Vector2(0.5885, 0.723333)
 texture = ExtResource("15_5cavd")
 
-[node name="Skectchch" type="Sprite2D" parent="NodeComic"]
+[node name="Trato y corrida" type="Sprite2D" parent="NodeComic"]
 position = Vector2(253.75, 125.75)
 scale = Vector2(0.574968, 0.502179)
 texture = ExtResource("16_8s4nh")
 
-[node name="Scerjjhee" type="Sprite2D" parent="NodeComic"]
+[node name="Puerta y Agua" type="Sprite2D" parent="NodeComic"]
 position = Vector2(861.5, 475)
 scale = Vector2(0.968439, 1)
 texture = ExtResource("17_ceqbg")
 
-[node name="Ffqfqfqfq" type="Sprite2D" parent="NodeComic"]
+[node name="Manos y felicidad" type="Sprite2D" parent="NodeComic"]
 position = Vector2(440, 418)
 texture = ExtResource("18_5do8b")
+
+[node name="BotonSiguienteComicOficina" type="Button" parent="NodeComic"]
+offset_left = 927.0
+offset_top = 309.0
+offset_right = 1138.0
+offset_bottom = 407.0
 
 [node name="Siguiente" type="Sprite2D" parent="NodeComic"]
 position = Vector2(1039, 357)
@@ -310,7 +297,6 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="NodeOficina" type="Node2D" parent="."]
-script = ExtResource("31_ukjmh")
 
 [node name="Celeste" type="Sprite2D" parent="NodeOficina"]
 position = Vector2(486, 330.331)
@@ -416,18 +402,18 @@ offset_top = 858.0
 offset_right = -196.0
 offset_bottom = 982.0
 
-[node name="Buttonsigueinte" type="Button" parent="NodeOficina"]
+[node name="Boton Dialogo" type="Button" parent="NodeOficina"]
 offset_left = 905.0
 offset_top = 357.0
 offset_right = 1106.0
 offset_bottom = 433.0
 
-[node name="Siguiente" type="Sprite2D" parent="NodeOficina/Buttonsigueinte"]
+[node name="Siguiente" type="Sprite2D" parent="NodeOficina/Boton Dialogo"]
 position = Vector2(111, 37)
 scale = Vector2(0.2235, 0.227292)
 texture = ExtResource("28_kh58l")
 
-[node name="Label" type="Label" parent="NodeOficina/Buttonsigueinte/Siguiente"]
+[node name="Label" type="Label" parent="NodeOficina/Boton Dialogo/Siguiente"]
 offset_left = -473.0
 offset_top = -88.0
 offset_right = 398.0
@@ -507,7 +493,6 @@ texture = ExtResource("41_mi8h5")
 texture = ExtResource("41_mi8h5")
 
 [node name="NodeCasa" type="Node2D" parent="."]
-visible = false
 
 [node name="FondoCasa" type="Sprite2D" parent="NodeCasa"]
 position = Vector2(583.5, 331.25)
@@ -559,14 +544,14 @@ position = Vector2(-230.367, -95.1335)
 scale = Vector2(1.33944, 1.33752)
 texture = ExtResource("37_bedw0")
 
-[connection signal="pressed" from="NodeMenuPrincipal/Jugar/TextureButton" to="NodeMenuPrincipal/Jugar" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="NodeMenuPrincipal/Intrucciones/TextureButton" to="NodeMenuPrincipal/Intrucciones" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="NodeInstrucciones/BotonGenero" to="NodeInstrucciones/BotonGenero" method="_on_pressed"]
-[connection signal="pressed" from="NodeInstrucciones/Atras" to="NodeInstrucciones/Atras" method="_on_pressed"]
-[connection signal="pressed" from="NodeGenero/ButtonJugarGenero" to="NodeGenero/ButtonJugarGenero" method="_on_pressed"]
-[connection signal="pressed" from="NodeGenero/ButtonAtrasGenero" to="NodeGenero/ButtonAtrasGenero" method="_on_pressed"]
+[connection signal="pressed" from="NodeMenuPrincipal/Jugar/JugarButtonPrincipalGenero" to="." method="_on_jugar_button_principal_genero_pressed"]
+[connection signal="pressed" from="NodeMenuPrincipal/Intrucciones/InstruccionBotonPrincipalInstrucciones" to="." method="_on_instruccion_boton_principal_instrucciones_pressed"]
+[connection signal="pressed" from="NodeInstrucciones/BotonInstruccionesGenero" to="." method="_on_boton_instrucciones_genero_pressed"]
+[connection signal="pressed" from="NodeInstrucciones/BotonAtras/BotonInstruccionesPrincipal" to="." method="_on_boton_instrucciones_principal_pressed"]
+[connection signal="pressed" from="NodeGenero/BotonJugarGeneroComic" to="." method="_on_boton_jugar_genero_comic_pressed"]
+[connection signal="pressed" from="NodeGenero/BotonGeneroMenuPrincipal" to="." method="_on_boton_genero_menu_principal_pressed"]
 [connection signal="pressed" from="NodeGenero/FondoGenero/Mujer" to="." method="_on_mujer_pressed"]
 [connection signal="pressed" from="NodeGenero/FondoGenero/Hombre" to="." method="_on_hombre_pressed"]
-[connection signal="pressed" from="NodeComic/Buttonsiguientecomic" to="NodeComic/Buttonsiguientecomic" method="_on_pressed"]
+[connection signal="pressed" from="NodeComic/BotonSiguienteComicOficina" to="." method="_on_boton_siguiente_comic_oficina_pressed"]
 [connection signal="visibility_changed" from="NodeOficina" to="." method="_on_node_oficina_visibility_changed"]
-[connection signal="pressed" from="NodeOficina/Buttonsigueinte" to="." method="_on_buttonsigueinte_pressed"]
+[connection signal="pressed" from="NodeOficina/Boton Dialogo" to="." method="_on_boton_dialogo_pressed"]

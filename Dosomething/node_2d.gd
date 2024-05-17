@@ -26,21 +26,23 @@ var dialtext = [
 
 func Lectura():
 	var file = FileAccess.open("res://eventos.txt", FileAccess.READ)
-	### estructura del txt eventos
-	### Numero del evento
-	### OpcionA
-	### OpcionB
-	### OpcionB
-	### Dinero A
-	### Empleados A
-	### Felicidad A
-	### Dinero B
-	### Empleados B
-	### Felicidad B
-	### Dinero C
-	### Empleados C
-	### Felicidad C
-	###
+	### estructura del txt eventos con su variable "positiva y negativa"
+	### Numero del evento 
+	### OpcionA texto
+	### OpcionB texto
+	### OpcionB texto
+	### Dinero A Numerico
+	### Empleados A Numerico
+	### Felicidad A Numerico
+	### Dinero B Numerico
+	### Empleados B Numerico
+	### Felicidad B Numerico
+	### Dinero C Numerico
+	### Empleados C Numerico
+	### Felicidad C Numerico
+	### Feedbackopcion1 texto
+	### FeedBackopcion2 texto
+	### Feedbackopcion3 texto
 	
 	if file:
 		while true:
@@ -70,22 +72,27 @@ func Lectura():
 		print("Error al abrir el archivo")
 
 	pass
+#funcion secundaria donde se asigna toda la lectura al array dentro del sistema
+func llenado(NumeroEvento,Dialogo, OpcionA,OpcionB,OpcionC,DineroA,EmpleadosA,FelicidadA,DineroB,EmpleadosB,FelicidadB,DineroC,EmpleadosC,FelicidadC,FeedbackA,FeedbackB,FeedbackC):
+	eventos = [NumeroEvento,Dialogo, OpcionA,OpcionB,OpcionC,DineroA,EmpleadosA,FelicidadA,DineroB,EmpleadosB,FelicidadB,DineroC,EmpleadosC,FelicidadC,FeedbackA,FeedbackB,FeedbackC]
+	pass	
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#Carga del juego, donde se toman todos los nodos y posteriomente se ocultan
 	var nodeprincipal = $NodeMenuPrincipal
 	var nodeintrucciones = $NodeInstrucciones
 	var nodecomic = $NodeComic
 	var nodegenero = $NodeGenero
 	var nodeoficina = $NodeOficina
 	var nodecasa = $NodeCasa
+	#se aplica la lectura, que toma el txt eventos y carga todos a un array
 	Lectura()
+	#oculta todos los nodos menos el de menu principal
 	nodeintrucciones.hide()
 	nodecomic.hide()
 	nodegenero.hide()
 	nodeoficina.hide()
 	nodecasa.hide()
-	
-	
 	pass # Replace with function body.
 
 
@@ -96,6 +103,9 @@ func _process(delta):
 
 
 func _on_node_oficina_visibility_changed():
+	#cuando se carga el nodo, dejo un estado para que se sepa en que parte del sistema esta
+	#1 cuando se carga, 2 cuando se oculta y 3 cuando aparece la primera vez al usuario
+	# hombre y mujer son una flag para mostrar el modelo de hombre y mujer
 	var oficina = get_node("NodeOficina")
 	var dialogo = get_node("NodeOficina/Dialogo/Dialogo")
 	var hombre = get_node("NodeOficina/HombreOficina")
@@ -115,12 +125,16 @@ func _on_node_oficina_visibility_changed():
 	pass
 	
 func PrimerDiaOficina():
+	#funcion cuando aparece el primer "evento" donde aparecen las presentaciones 
+	#al jugador
 	var dialogo = get_node("NodeOficina/Dialogo/Dialogo")
 	var Dinero = get_node("NodeOficina/Dialogo/Dinero")
 	var Felicidad = get_node("NodeOficina/Dialogo/Felicidad")
 	var Empleados = get_node("NodeOficina/Dialogo/Empleados")
 	var Ganancias = get_node("NodeOficina/Ganancias")
 	var Flechas = get_node("NodeOficina/Flehcas")
+	#aqui un intento de asignar las variables iniciales a los labels iniciales para
+	#ser mostrados en pantalla
 	Flechas.hide()
 	Dinero.text ="$" + str(10)
 	Felicidad.text =  str(10)
@@ -133,9 +147,6 @@ func PrimerDiaOficina():
 	
 	pass
 	
-func llenado(NumeroEvento,Dialogo, OpcionA,OpcionB,OpcionC,DineroA,EmpleadosA,FelicidadA,DineroB,EmpleadosB,FelicidadB,DineroC,EmpleadosC,FelicidadC,FeedbackA,FeedbackB,FeedbackC):
-	eventos = [NumeroEvento,Dialogo, OpcionA,OpcionB,OpcionC,DineroA,EmpleadosA,FelicidadA,DineroB,EmpleadosB,FelicidadB,DineroC,EmpleadosC,FelicidadC,FeedbackA,FeedbackB,FeedbackC]
-	pass
 
 
 
@@ -169,4 +180,68 @@ func _on_buttonsigueinte_pressed():
 		Iniciodialogos = 3
 		
 	
+	pass # Replace with function body.
+
+
+
+	
+
+func _on_jugar_button_principal_genero_pressed():
+	#Primer boton del menu principal, el cual al apretarlo pasa a la escena de genero
+	var Titulo = get_node("NodeMenuPrincipal")
+	var Genero = get_node("NodeGenero")
+	Titulo.hide()
+	Genero.show()
+	pass 
+
+func _on_instruccion_boton_principal_instrucciones_pressed():
+	#Segundo boton del menu principal, el cual al apretarlo pasa a la escena de Instrucciones
+	var Titulo = get_node("NodeMenuPrincipal")
+	var Instrucciones = get_node("NodeInstrucciones")
+	Titulo.hide()
+	Instrucciones.show()
+	pass 
+func _on_boton_instrucciones_genero_pressed():
+	#Primer Boton en Instrucciones donde se procede a genero
+	var Genero  = get_node("NodeGenero")
+	var Instrucciones = get_node("NodeInstrucciones")
+	Instrucciones.hide()
+	Genero.show()
+	pass 
+
+
+func _on_boton_instrucciones_principal_pressed():
+	#Segundo Boton en Instrucciones donde se procede de instrucciones al menu principal
+	var Principal  = get_node("NodeMenuPrincipal")
+	var Instrucciones = get_node("NodeInstrucciones")
+	Instrucciones.hide()
+	Principal.show()
+	pass 
+
+
+func _on_boton_genero_menu_principal_pressed():
+	#primer boton en Genero que va a Menu Principal
+	var Principal  = get_node("NodeMenuPrincipal")
+	var genero = get_node("NodeGenero")
+	genero.hide()
+	Principal.show()
+	pass 
+func _on_boton_jugar_genero_comic_pressed():
+	#Segundo boton en Genero que va al comic
+	var Comic  = get_node("NodeComic")
+	var genero = get_node("NodeGenero")
+	genero.hide()
+	Comic.show()
+	pass 
+
+func _on_boton_siguiente_comic_oficina_pressed():
+	var Comic  = get_node("NodeComic")
+	var genero = get_node("NodeGenero")
+	genero.hide()
+	Comic.show()
+	pass 
+
+
+func _on_boton_dialogo_pressed():
+	#Boton dialogo de la oficina
 	pass # Replace with function body.

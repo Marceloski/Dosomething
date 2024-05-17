@@ -13,6 +13,4 @@ func _on_pressed():
 	var ins = grandparrent.get_node("NodeGenero")
 	parent.hide()
 	ins.show()
-	
-	
 	pass 
